@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: hsl(218, 22%, 67%);
+    font-family: 'Karia', sans-serif;
+    
+
+}
+.container {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0px 0px 35px rgb(41, 139, 54);
+
+}
+.grid {
+    padding: 20px;
+
+}
+
+.one {
+    background-color: #ffffff;
+    grid-column: 1 / 3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.one h3 {
+    color: hsl(179, 62%, 43%);
+    margin-top: 0;
+    font-weight: 700;
+}
+.one h4 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 400;
+}
+.one p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.6;
+}
+.two {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+span {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+sup {
+    padding: 5px; 
+}
+.two h4, p {
+    color: hsl(204, 43%, 93%);
+}
+.two button {
+    color: hsl(204, 43%, 93%);
+    padding: 10px 45px;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 90%;
+    margin-top: 30px;
+    font-weight:400;
+    letter-spacing: 1px;
+    box-shadow: 0px 10px 25px #1A8B8D;
+    
+}
+.two button:hover{
+    cursor: pointer;
+}
+.three {
+    background-color: hsl(179, 70%, 45%);
+    border-bottom-right-radius: 10px;
+}
+.three h4, li {
+    color: hsl(204, 43%, 93%);
+}
+.three ul {
+    padding: 0;
+    
+}
+.three li {
+    list-style-type: none;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.attribution { font-size: 11px; text-align: center; color: black;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 226px) and (max-width: 720px) {
+   .container {
+        display: grid;
+        margin: 50px auto;
+        padding: 20px auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px;
+        max-width: 300px;
+        -webkit-box-shadow: -5px 0px 23px -4px rgba(238, 56, 238, 0.66);
+        -moz-box-shadow: -5px 0px 23px -4px rgba(238, 56, 238, 0.66);
+        box-shadow: -5px 0px 23px -4px rgba(238, 56, 238, 0.66);
+    }
+    .one {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        grid-column: 1 / 1;
+        
+    }
+    .three {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
